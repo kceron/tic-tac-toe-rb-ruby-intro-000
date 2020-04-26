@@ -125,12 +125,11 @@ def won?(board)
  def play(board)
     input = gets.strip
     until over?(board)
-        turn_count(board)
         turn(board)
+      end
         if won?(board) 
          puts "Congrats #{winner(board)}"
          elsif draw?(board)
          puts "It is a draw"
     end 
-  end 
   end 
