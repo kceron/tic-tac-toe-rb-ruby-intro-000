@@ -96,7 +96,6 @@ def won?(board)
  end
  
  def over?(board)
-   #binding.pry 
    if won?(board) || full?(board) || draw?(board)
      return true 
    else 
